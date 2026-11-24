@@ -1113,12 +1113,24 @@ export default function ClinicalPortfolio() {
 
                             <div className="hero-stagger mt-8 flex flex-wrap items-center gap-4">
                                 <a
-                                    href="#equipment-lab"
+                                    href="/Suhani-Johare-Resume.pdf"
+                                    download="Suhani-Johare-Resume.pdf"
+                                    onClick={() => showToast("DOWNLOADING // SUHANI JOHARE RESUME.PDF")}
                                     className="interactive-target group inline-flex items-center gap-2.5 rounded-2xl bg-gradient-to-r from-teal-600 to-sky-600 px-6 py-3.5 text-sm font-bold text-white shadow-clinical transition-all hover:-translate-y-0.5 hover:shadow-glow-teal"
                                 >
-                                    <span>Explore Equipment Lab</span>
-                                    <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" strokeWidth="2.2" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                    <span>Download Resume</span>
+                                    <svg
+                                        className="h-4 w-4 transition-transform group-hover:translate-y-0.5"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        strokeWidth="2.2"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V3"
+                                        />
                                     </svg>
                                 </a>
                                 <a
@@ -1346,9 +1358,8 @@ export default function ClinicalPortfolio() {
                                             <div
                                                 ref={(el) => { plateRefs.current[0] = el; }}
                                                 onClick={() => inspectLayerByClick(0)}
-                                                className={`equip-layer interactive-target pointer-events-auto w-[270px] sm:w-[310px] cursor-pointer rounded-2xl border-2 border-slate-200 bg-white/95 p-2.5 shadow-2xl transition-shadow ${
-                                                    activeLayerIdx === 0 ? "is-focused opacity-100" : "opacity-90"
-                                                }`}
+                                                className={`equip-layer interactive-target pointer-events-auto w-[270px] sm:w-[310px] cursor-pointer rounded-2xl border-2 border-slate-200 bg-white/95 p-2.5 shadow-2xl transition-shadow ${activeLayerIdx === 0 ? "is-focused opacity-100" : "opacity-90"
+                                                    }`}
                                             >
                                                 <svg viewBox="0 0 360 280" className="h-full w-full" fill="none">
                                                     <rect x="8" y="8" width="344" height="264" rx="18" fill="#FFFFFF" stroke="#CBD5E1" strokeWidth="2" />
@@ -1368,9 +1379,8 @@ export default function ClinicalPortfolio() {
 
                                             {/* Attached Callout Pill & Leader Tick - Carrier 0 (Right) */}
                                             <div
-                                                className={`pointer-events-auto absolute right-0 sm:right-2 flex items-center gap-1.5 transition-opacity duration-300 ${
-                                                    activeLayerIdx === 0 ? "opacity-100" : "opacity-40 hover:opacity-80"
-                                                }`}
+                                                className={`pointer-events-auto absolute right-0 sm:right-2 flex items-center gap-1.5 transition-opacity duration-300 ${activeLayerIdx === 0 ? "opacity-100" : "opacity-40 hover:opacity-80"
+                                                    }`}
                                             >
                                                 <div className="h-[1px] w-5 sm:w-8 border-t border-dashed border-teal-500" />
                                                 <button
@@ -1392,9 +1402,8 @@ export default function ClinicalPortfolio() {
                                         <div className="relative flex w-full max-w-[440px] items-center justify-center">
                                             {/* Attached Callout Pill & Leader Tick - Carrier 1 (Left) */}
                                             <div
-                                                className={`pointer-events-auto absolute left-0 sm:left-2 flex items-center gap-1.5 transition-opacity duration-300 ${
-                                                    activeLayerIdx === 1 ? "opacity-100" : "opacity-40 hover:opacity-80"
-                                                }`}
+                                                className={`pointer-events-auto absolute left-0 sm:left-2 flex items-center gap-1.5 transition-opacity duration-300 ${activeLayerIdx === 1 ? "opacity-100" : "opacity-40 hover:opacity-80"
+                                                    }`}
                                             >
                                                 <button
                                                     type="button"
@@ -1409,9 +1418,8 @@ export default function ClinicalPortfolio() {
                                             <div
                                                 ref={(el) => { plateRefs.current[1] = el; }}
                                                 onClick={() => inspectLayerByClick(1)}
-                                                className={`equip-layer interactive-target pointer-events-auto w-[270px] sm:w-[310px] cursor-pointer rounded-2xl border-2 border-sky-300 bg-gradient-to-br from-sky-50/95 to-teal-50/90 p-2.5 shadow-xl transition-shadow ${
-                                                    activeLayerIdx === 1 ? "is-focused opacity-100" : "opacity-90"
-                                                }`}
+                                                className={`equip-layer interactive-target pointer-events-auto w-[270px] sm:w-[310px] cursor-pointer rounded-2xl border-2 border-sky-300 bg-gradient-to-br from-sky-50/95 to-teal-50/90 p-2.5 shadow-xl transition-shadow ${activeLayerIdx === 1 ? "is-focused opacity-100" : "opacity-90"
+                                                    }`}
                                             >
                                                 <svg viewBox="0 0 360 280" className="h-full w-full" fill="none">
                                                     <rect x="12" y="12" width="336" height="256" rx="16" fill="#F0F9FF" stroke="#0284C7" strokeWidth="2" />
@@ -1445,9 +1453,8 @@ export default function ClinicalPortfolio() {
                                             <div
                                                 ref={(el) => { plateRefs.current[2] = el; }}
                                                 onClick={() => inspectLayerByClick(2)}
-                                                className={`equip-layer interactive-target pointer-events-auto w-[270px] sm:w-[310px] cursor-pointer rounded-2xl border-2 border-teal-200 bg-gradient-to-br from-white/95 to-teal-50/90 p-2.5 shadow-xl transition-shadow ${
-                                                    activeLayerIdx === 2 ? "is-focused opacity-100" : "opacity-90"
-                                                }`}
+                                                className={`equip-layer interactive-target pointer-events-auto w-[270px] sm:w-[310px] cursor-pointer rounded-2xl border-2 border-teal-200 bg-gradient-to-br from-white/95 to-teal-50/90 p-2.5 shadow-xl transition-shadow ${activeLayerIdx === 2 ? "is-focused opacity-100" : "opacity-90"
+                                                    }`}
                                             >
                                                 <svg viewBox="0 0 360 280" className="h-full w-full" fill="none">
                                                     <rect x="12" y="12" width="336" height="256" rx="16" fill="#FFFFFF" stroke="#0D9488" strokeWidth="1.8" strokeDasharray="6 4" />
@@ -1468,9 +1475,8 @@ export default function ClinicalPortfolio() {
 
                                             {/* Attached Callout Pill & Leader Tick - Carrier 2 (Right) */}
                                             <div
-                                                className={`pointer-events-auto absolute right-0 sm:right-2 flex items-center gap-1.5 transition-opacity duration-300 ${
-                                                    activeLayerIdx === 2 ? "opacity-100" : "opacity-40 hover:opacity-80"
-                                                }`}
+                                                className={`pointer-events-auto absolute right-0 sm:right-2 flex items-center gap-1.5 transition-opacity duration-300 ${activeLayerIdx === 2 ? "opacity-100" : "opacity-40 hover:opacity-80"
+                                                    }`}
                                             >
                                                 <div className="h-[1px] w-5 sm:w-8 border-t border-dashed border-teal-500" />
                                                 <button
@@ -1492,9 +1498,8 @@ export default function ClinicalPortfolio() {
                                         <div className="relative flex w-full max-w-[440px] items-center justify-center">
                                             {/* Attached Callout Pill & Leader Tick - Carrier 3 (Left) */}
                                             <div
-                                                className={`pointer-events-auto absolute left-0 sm:left-2 flex items-center gap-1.5 transition-opacity duration-300 ${
-                                                    activeLayerIdx === 3 ? "opacity-100" : "opacity-40 hover:opacity-80"
-                                                }`}
+                                                className={`pointer-events-auto absolute left-0 sm:left-2 flex items-center gap-1.5 transition-opacity duration-300 ${activeLayerIdx === 3 ? "opacity-100" : "opacity-40 hover:opacity-80"
+                                                    }`}
                                             >
                                                 <button
                                                     type="button"
@@ -1509,9 +1514,8 @@ export default function ClinicalPortfolio() {
                                             <div
                                                 ref={(el) => { plateRefs.current[3] = el; }}
                                                 onClick={() => inspectLayerByClick(3)}
-                                                className={`equip-layer interactive-target pointer-events-auto w-[270px] sm:w-[310px] cursor-pointer rounded-2xl border-2 border-slate-300 bg-gradient-to-br from-slate-100 to-slate-200/90 p-2.5 shadow-xl transition-shadow ${
-                                                    activeLayerIdx === 3 ? "is-focused opacity-100" : "opacity-90"
-                                                }`}
+                                                className={`equip-layer interactive-target pointer-events-auto w-[270px] sm:w-[310px] cursor-pointer rounded-2xl border-2 border-slate-300 bg-gradient-to-br from-slate-100 to-slate-200/90 p-2.5 shadow-xl transition-shadow ${activeLayerIdx === 3 ? "is-focused opacity-100" : "opacity-90"
+                                                    }`}
                                             >
                                                 <svg viewBox="0 0 360 280" className="h-full w-full" fill="none">
                                                     <rect x="10" y="10" width="340" height="260" rx="16" fill="#F8FAFC" stroke="#94A3B8" strokeWidth="2" />
